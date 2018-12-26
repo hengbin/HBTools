@@ -8,7 +8,7 @@
 
 #import "SegmentViewController.h"
 #import "HBTools.h"
-#import <SDAutoLayout.h>
+#import <SDAutoLayout/SDAutoLayout.h>
 
 
 @interface SegmentViewController ()<HBSegmentDelegate,HBSegmentDataSource,UIScrollViewDelegate>{
