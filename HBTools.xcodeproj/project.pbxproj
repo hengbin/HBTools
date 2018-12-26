@@ -94,18 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				A6F42DE421D39257006A05EA /* HBTools.h */,
-				A6F42DE521D39257006A05EA /* Segment */,
-			);
-			path = HBTools;
-			sourceTree = "<group>";
-		};
-		A6F42DE521D39257006A05EA /* Segment */ = {
-			isa = PBXGroup;
-			children = (
 				A6F42DE621D39257006A05EA /* HBSegment.h */,
 				A6F42DE721D39257006A05EA /* HBSegment.m */,
 			);
-			path = Segment;
+			path = HBTools;
 			sourceTree = "<group>";
 		};
 		A6F42DE921D39457006A05EA /* ViewControllers */ = {

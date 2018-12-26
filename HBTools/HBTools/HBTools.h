@@ -18,6 +18,6 @@
  */
 
 
-#import "Segment/HBSegment.h"
+#import "HBSegment.h"
 
 #endif /* HBTools_h */
