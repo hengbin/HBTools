@@ -9,7 +9,7 @@
 #ifndef HBTools_h
 #define HBTools_h
 
-#import "HBSegment.h"
+#import "Segment/HBSegment.h"
 
 
 #endif /* HBTools_h */
