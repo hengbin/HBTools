@@ -7,7 +7,7 @@
 //
 
 #import "HBSegment.h"
-#import <SDAutoLayout.h>
+#import "SDAutoLayout.h"
 
 struct DelegateFlag {
     BOOL didClickSegementButtonItemFlag;
