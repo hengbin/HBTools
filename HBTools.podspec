@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "HBTools"
-  s.version      = "1.0.1"
-  s.summary      = "自己用的一些工具类集合  v1.0.1"
+  s.version      = "1.0.2"
+  s.summary      = "自己用的一些工具类集合  v1.0.2"
 
   s.description  = <<-DESC
               完成 自定义列表分栏 HBSegment
