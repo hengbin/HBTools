@@ -9,7 +9,15 @@
 #ifndef HBTools_h
 #define HBTools_h
 
-#import "Segment/HBSegment.h"
+/*
+ 
+ HBTools
+ 版本：1.0.4
+ 发布：2018年12月26日
+ 
+ */
 
+
+#import "Segment/HBSegment.h"
 
 #endif /* HBTools_h */
