@@ -379,6 +379,7 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
+					"-l\"SDAutoLayout\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hengbin.HBTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -400,6 +401,7 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
+					"-l\"SDAutoLayout\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hengbin.HBTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
