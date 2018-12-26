@@ -1,16 +1,17 @@
 //
-//  ViewController.m
+//  SegmentViewController.m
 //  HBTools
 //
 //  Created by 花生酱 on 26/12/2018.
 //  Copyright © 2018 花生酱. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SegmentViewController.h"
 #import "HBTools.h"
 #import <SDAutoLayout.h>
 
-@interface ViewController ()<HBSegmentDelegate,HBSegmentDataSource,UIScrollViewDelegate>{
+
+@interface SegmentViewController ()<HBSegmentDelegate,HBSegmentDataSource,UIScrollViewDelegate>{
     
     NSString * _flagString;
     NSArray * _titleArray;
@@ -25,7 +26,7 @@
 
 @end
 
-@implementation ViewController
+@implementation SegmentViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -109,6 +110,5 @@
 - (NSString *)segementView:(HBSegment *)segmentView titleForButtonItemAtIndex:(NSInteger)index {
     return _titleArray[index];
 }
-
 
 @end

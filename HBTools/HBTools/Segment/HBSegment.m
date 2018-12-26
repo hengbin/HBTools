@@ -1,6 +1,6 @@
 //
 //  HBSegment.m
-//  SegmentHB
+//  HBTools
 //
 //  Created by 花生酱 on 23/12/2018.
 //  Copyright © 2018 花生酱. All rights reserved.
@@ -202,8 +202,6 @@ struct DelegateFlag {
         
         [self.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
     }
-    NSLog(@"item.title = %@",item.titleLabel.text);
-    NSLog(@"item.frame = %@",NSStringFromCGRect(item.frame));
     
     [UIView animateWithDuration:0.5 animations:^{
         
