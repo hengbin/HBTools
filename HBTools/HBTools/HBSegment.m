@@ -31,8 +31,10 @@ struct DelegateFlag {
 
 @property(nonatomic ,strong) NSMutableArray * itemArray;
 
-@property(nonatomic ,strong) CALayer * lineLayer;
+@property(nonatomic ,strong) NSMutableArray * separateArray;
 
+
+@property(nonatomic ,strong) CALayer * lineLayer;
 
 @end
 
@@ -42,6 +44,7 @@ struct DelegateFlag {
 @synthesize selectedTitleColor = _selectedTitleColor;
 @synthesize fontSize = _fontSize;
 @synthesize lineColor = _lineColor;
+@synthesize separateColor = _separateColor;
 
 - (instancetype)init
 {
@@ -90,6 +93,7 @@ struct DelegateFlag {
     NSInteger itemCount = [self.dataSource numberOfItemInSegmentView:self];
     
     self.itemArray = [NSMutableArray arrayWithCapacity:itemCount];
+    self.separateArray = [NSMutableArray array];
     
     UIView * tempView = self.scrollView;
     
@@ -123,15 +127,18 @@ struct DelegateFlag {
         [button setupAutoSizeWithHorizontalPadding:5 buttonHeight:34];
         [self.itemArray addObject:button];
         
-        if (self.hasSeparate && index+1<itemCount) {
+        if (index+1<itemCount) {
             UILabel * label = [UILabel new];
             label.backgroundColor = self.separateColor;
+            [label setHidden:!self.hasSeparate];
             [self.scrollView addSubview:label];
             label.sd_layout
             .leftSpaceToView(button, 5)
             .centerYEqualToView(button)
             .widthIs(1)
             .heightRatioToView(button, 0.5);
+            
+            [self.separateArray addObject:label];
             
             tempView = label;
         }else{
@@ -297,29 +304,57 @@ struct DelegateFlag {
     }
 }
 
+-(void)setHasSeparate:(BOOL)hasSeparate{
+    _hasSeparate = hasSeparate;
+    for (UILabel * label in self.separateArray) {
+        [label setHidden:!hasSeparate];
+    }
+}
+
 -(UIColor *)separateColor{
     if (!_separateColor) {
         _separateColor = [UIColor lightGrayColor];
     }
     return _separateColor;
 }
+-(void)setSeparateColor:(UIColor *)separateColor{
+    _separateColor = separateColor;
+    for (UILabel * label in self.separateArray) {
+        [label setBackgroundColor:separateColor];
+    }
+}
 
 -(CGFloat)fontSize{
     if (!_fontSize) {
         CGFloat fontSize = 14;
-        if (_viewWidth < 375) {
+        if ([UIScreen mainScreen].bounds.size.width < 375) {
             fontSize = 13;
         }
         _fontSize = fontSize;
     }
     return _fontSize;
 }
+-(void)setFontSize:(CGFloat)fontSize{
+    _fontSize = fontSize;
+    for (UIButton * button in self.itemArray) {
+        button.titleLabel.font = [UIFont systemFontOfSize:fontSize];
+    }
+}
+
 -(UIColor *)normalTitleColor{
     if (!_normalTitleColor) {
         _normalTitleColor = [UIColor blackColor];
     }
     return _normalTitleColor;
 }
+-(void)setNormalTitleColor:(UIColor *)normalTitleColor{
+    _normalTitleColor = normalTitleColor;
+    
+    for (UIButton * button in self.itemArray) {
+        [button setTitleColor:normalTitleColor forState:UIControlStateNormal];
+    }
+}
+
 -(UIColor *)selectedTitleColor{
     if (!_selectedTitleColor) {
         _selectedTitleColor = [UIColor orangeColor];
@@ -327,16 +362,13 @@ struct DelegateFlag {
     return _selectedTitleColor;
 }
 
-//UIColor 转UIImage
-- (UIImage*) createImageWithColor: (UIColor*) color{
-    CGRect rect=CGRectMake(0,0, 1, 1);
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, rect);
-    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return theImage;
+-(void)setSelectedTitleColor:(UIColor *)selectedTitleColor{
+    
+    _selectedTitleColor = selectedTitleColor;
+    
+    for (UIButton * button in self.itemArray) {
+        [button setTitleColor:selectedTitleColor forState:UIControlStateSelected];
+    }
 }
 
 @end

@@ -15,6 +15,8 @@
 		A6F42DBB21D3895B006A05EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F42DBA21D3895B006A05EA /* main.m */; };
 		A6F42DE821D39257006A05EA /* HBSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F42DE721D39257006A05EA /* HBSegment.m */; };
 		A6F42DEC21D3947E006A05EA /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F42DEB21D3947E006A05EA /* SegmentViewController.m */; };
+		A6F944F421D5F78B00BDB5F2 /* UIImage+ColorToImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F944F321D5F78B00BDB5F2 /* UIImage+ColorToImage.m */; };
+		A6F944F721D5FEE300BDB5F2 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F944F621D5FEE300BDB5F2 /* UIColor+Hex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,10 @@
 		A6F42DE721D39257006A05EA /* HBSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSegment.m; sourceTree = "<group>"; };
 		A6F42DEA21D3947E006A05EA /* SegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentViewController.h; sourceTree = "<group>"; };
 		A6F42DEB21D3947E006A05EA /* SegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentViewController.m; sourceTree = "<group>"; };
+		A6F944F221D5F76D00BDB5F2 /* UIImage+ColorToImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorToImage.h"; sourceTree = "<group>"; };
+		A6F944F321D5F78B00BDB5F2 /* UIImage+ColorToImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorToImage.m"; sourceTree = "<group>"; };
+		A6F944F521D5FEE300BDB5F2 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		A6F944F621D5FEE300BDB5F2 /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,10 @@
 				A6F42DE421D39257006A05EA /* HBTools.h */,
 				A6F42DE621D39257006A05EA /* HBSegment.h */,
 				A6F42DE721D39257006A05EA /* HBSegment.m */,
+				A6F944F221D5F76D00BDB5F2 /* UIImage+ColorToImage.h */,
+				A6F944F321D5F78B00BDB5F2 /* UIImage+ColorToImage.m */,
+				A6F944F521D5FEE300BDB5F2 /* UIColor+Hex.h */,
+				A6F944F621D5FEE300BDB5F2 /* UIColor+Hex.m */,
 			);
 			path = HBTools;
 			sourceTree = "<group>";
@@ -219,8 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F42DBB21D3895B006A05EA /* main.m in Sources */,
+				A6F944F721D5FEE300BDB5F2 /* UIColor+Hex.m in Sources */,
 				A6F42DAD21D3895A006A05EA /* AppDelegate.m in Sources */,
 				A6F42DEC21D3947E006A05EA /* SegmentViewController.m in Sources */,
+				A6F944F421D5F78B00BDB5F2 /* UIImage+ColorToImage.m in Sources */,
 				A6F42DE821D39257006A05EA /* HBSegment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

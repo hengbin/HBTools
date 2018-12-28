@@ -19,5 +19,8 @@
 
 
 #import "HBSegment.h"
+#import "UIColor+Hex.h"
+#import "UIImage+ColorToImage.h"
+
 
 #endif /* HBTools_h */
