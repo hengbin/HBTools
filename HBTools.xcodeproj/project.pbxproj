@@ -100,12 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				A6F42DE421D39257006A05EA /* HBTools.h */,
-				A6F42DE621D39257006A05EA /* HBSegment.h */,
-				A6F42DE721D39257006A05EA /* HBSegment.m */,
-				A6F944F221D5F76D00BDB5F2 /* UIImage+ColorToImage.h */,
-				A6F944F321D5F78B00BDB5F2 /* UIImage+ColorToImage.m */,
-				A6F944F521D5FEE300BDB5F2 /* UIColor+Hex.h */,
-				A6F944F621D5FEE300BDB5F2 /* UIColor+Hex.m */,
+				A6F944F821D8F12C00BDB5F2 /* Segment */,
+				A6F944FA21D8F14600BDB5F2 /* UIImage */,
+				A6F944F921D8F13A00BDB5F2 /* UIColor */,
 			);
 			path = HBTools;
 			sourceTree = "<group>";
@@ -125,6 +122,33 @@
 				A6F42DEB21D3947E006A05EA /* SegmentViewController.m */,
 			);
 			path = Segment;
+			sourceTree = "<group>";
+		};
+		A6F944F821D8F12C00BDB5F2 /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				A6F42DE621D39257006A05EA /* HBSegment.h */,
+				A6F42DE721D39257006A05EA /* HBSegment.m */,
+			);
+			path = Segment;
+			sourceTree = "<group>";
+		};
+		A6F944F921D8F13A00BDB5F2 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				A6F944F521D5FEE300BDB5F2 /* UIColor+Hex.h */,
+				A6F944F621D5FEE300BDB5F2 /* UIColor+Hex.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		A6F944FA21D8F14600BDB5F2 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				A6F944F221D5F76D00BDB5F2 /* UIImage+ColorToImage.h */,
+				A6F944F321D5F78B00BDB5F2 /* UIImage+ColorToImage.m */,
+			);
+			path = UIImage;
 			sourceTree = "<group>";
 		};
 		B61B9F3E8E6BB6FE9F7634A1 /* Pods */ = {

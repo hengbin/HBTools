@@ -19,4 +19,15 @@
  */
 +(UIImage*)createImageWithColor: (UIColor*) color;
 
+
+/**
+ 读取本地图片资源
+
+ @param imageNamed 图片名字
+ @param fileType 图片类型（png可填nil）
+ @return 图片对象
+ */
++(UIImage *)createImageWithImageNamed:(NSString *)imageNamed fileType:(NSString *)fileType;
+
+
 @end

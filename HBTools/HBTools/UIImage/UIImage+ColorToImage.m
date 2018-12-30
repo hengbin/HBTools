@@ -22,4 +22,21 @@
     return theImage;
 }
 
+
++(UIImage *)createImageWithImageNamed:(NSString *)imageNamed fileType:(NSString *)fileType{
+    
+    if (!fileType) {
+        
+        fileType = @"png";
+    }
+    
+    // 方法一
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:imageNamed ofType:fileType];
+    NSData *imageData = [NSData dataWithContentsOfFile:filePath];
+    
+    UIImage *image = [UIImage imageWithData:imageData];
+    
+    return image;
+}
+
 @end

@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "HBTools"
-  s.version      = "1.0.7"
-  s.summary      = "自己用的一些工具类集合  v1.0.7"
+  s.version      = "1.0.8"
+  s.summary      = "自己用的一些工具类集合  v1.0.8"
 
   s.description  = <<-DESC
               完成 自定义列表分栏 HBSegment
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source_files  = "HBTools/HBTools/*.{h,m}"
+  s.source_files  = "HBTools/HBTools/**.{h,m}"
   # s.public_header_files = 'HBTools/HBTools/HBTools.h'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
