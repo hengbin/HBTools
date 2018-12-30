@@ -18,6 +18,7 @@ struct DelegateFlag {
     
     UIButton * _flagButton;
     CGFloat _viewWidth;
+    BOOL _isFirstLoad;
 }
 
 @property(nonatomic ,assign) struct DelegateFlag delegateFlag;
@@ -33,7 +34,6 @@ struct DelegateFlag {
 
 @property(nonatomic ,strong) NSMutableArray * separateArray;
 
-
 @property(nonatomic ,strong) CALayer * lineLayer;
 
 @end
@@ -45,6 +45,7 @@ struct DelegateFlag {
 @synthesize fontSize = _fontSize;
 @synthesize lineColor = _lineColor;
 @synthesize separateColor = _separateColor;
+@synthesize zoomFactor = _zoomFactor;
 
 - (instancetype)init
 {
@@ -54,6 +55,8 @@ struct DelegateFlag {
         
         self.hasSeparate = NO;
         self.showLine = NO;
+        self.isZoom = NO;
+        self.currentIndex = 0;
     }
     return self;
 }
@@ -66,6 +69,8 @@ struct DelegateFlag {
         self.backgroundColor = [UIColor whiteColor];
         self.hasSeparate = NO;
         self.showLine = NO;
+        self.isZoom = NO;
+        self.currentIndex = 0;
     }
     return self;
 }
@@ -79,6 +84,8 @@ struct DelegateFlag {
         self.backgroundColor = [UIColor whiteColor];
         self.hasSeparate = NO;
         self.showLine = NO;
+        self.isZoom = NO;
+        self.currentIndex = 0;
     }
     return self;
 }
@@ -146,22 +153,26 @@ struct DelegateFlag {
         }
     }
     
-    UIButton * firstButton = self.itemArray.firstObject;
-    [firstButton setSelected:YES];
-    _flagButton = firstButton;
-    self.currentIndex = 0;
+    
     
     [self.scrollView setupAutoContentSizeWithRightView:tempView rightMargin:10];
 
     [self.scrollView updateLayout];
+    
+    UIButton * firstButton = self.itemArray[self.currentIndex];
+    [firstButton setSelected:YES];
+    firstButton.titleLabel.font = [UIFont systemFontOfSize:self.fontSize+4];
+    _flagButton = firstButton;
+    
+    
 #pragma - mark =============== 初始化layer =======================
     
     self.lineLayer = [[CALayer alloc]init];
     
     self.lineLayer.backgroundColor = self.lineColor.CGColor;
-
+    
     self.lineLayer.bounds = CGRectMake(0,0,firstButton.width,1);
-
+    
     CGFloat scrollViewBottom = self.scrollView.frame.size.height-2;
     
     self.lineLayer.position = CGPointMake(firstButton.centerX, scrollViewBottom);
@@ -169,24 +180,63 @@ struct DelegateFlag {
     [self.scrollView.layer addSublayer:self.lineLayer];
 }
 
+-(void)setSelectedItemWithIndex:(NSInteger)selectedIndex{
+    
+    if (self.dataSource) {
+        
+        [_flagButton setSelected:NO];
+        _flagButton.titleLabel.font = [UIFont systemFontOfSize:self.fontSize];
+        UIButton * firstButton = self.itemArray[selectedIndex];
+        [firstButton setSelected:YES];
+        firstButton.titleLabel.font = [UIFont systemFontOfSize:self.fontSize+4];
+        _flagButton = firstButton;
+        self.currentIndex = selectedIndex;
+        
+        [firstButton updateLayout];
+        
+        self.lineLayer.bounds = CGRectMake(0,0,firstButton.width,1);
+        
+        CGFloat scrollViewBottom = self.scrollView.frame.size.height-2;
+        
+        self.lineLayer.position = CGPointMake(firstButton.centerX, scrollViewBottom);
+        
+    }else{
+        self.currentIndex = selectedIndex;
+    }
+}
+
+
 -(void)didPressButtonItem:(UIButton *)button{
     
     if ([_flagButton isEqual:button]) {
         return;
     }
-    self.currentIndex = button.tag-1000;
-    [self scrollViewDidScrollWithItem:button];
     
+    NSInteger buttonIndex = button.tag-1000;
+    
+    BOOL animated = YES;
+    
+    if ( labs(buttonIndex - self.currentIndex) >= 3) {
+        animated = NO;
+    }
+    self.currentIndex = buttonIndex;
+    
+    [self scrollViewDidScrollWithItem:button];
+
     if (_delegateFlag.didClickSegementButtonItemFlag) {
-        [self.delegate segementView:self didClickSegementButtonItem:button.tag-1000];
+        [self.delegate segementView:self didClickSegementButtonItem:self.currentIndex animated:animated];
     }
 }
 
 -(void)scrollViewDidScrollWithItem:(UIButton *)item{
     
     [_flagButton setSelected:NO];
+    _flagButton.titleLabel.font = [UIFont systemFontOfSize:self.fontSize];
     [item setSelected:YES];
+    item.titleLabel.font = [UIFont systemFontOfSize:self.fontSize+4];
     _flagButton = item;
+    
+    [self.scrollView updateLayout];
     
     CGFloat twoThirdScreenWidth = _viewWidth/3*2;
     
@@ -225,7 +275,7 @@ struct DelegateFlag {
     
     CGFloat index = offSetX/_viewWidth;
     CGFloat absIndex = fabs(index - self.currentIndex);
-    if (absIndex == 1) {
+    if (absIndex >= 1) {
         
         NSInteger buttonIndex = (NSInteger)index;
         
@@ -237,6 +287,7 @@ struct DelegateFlag {
     }
 }
 
+#pragma - mark =============== 懒加载 =======================
 -(UIScrollView *)scrollView{
     if (!_scrollView) {
         _scrollView = [[UIScrollView alloc]init];
@@ -256,10 +307,24 @@ struct DelegateFlag {
     return _scrollView;
 }
 
+#pragma - mark =============== SET GET 方法 =======================
+
+-(CGFloat)zoomFactor{
+    if (!_zoomFactor) {
+        _zoomFactor = 3.0;
+    }
+    return _zoomFactor;
+}
+
+-(void)setZoomFactor:(CGFloat)zoomFactor{
+    _zoomFactor = zoomFactor;
+    _flagButton.titleLabel.font = [UIFont systemFontOfSize:self.fontSize+zoomFactor];
+}
+
 -(void)setDelegate:(id<HBSegmentDelegate>)delegate{
     
     _delegate = delegate;
-    _delegateFlag.didClickSegementButtonItemFlag = [self.delegate respondsToSelector:@selector(segementView:didClickSegementButtonItem:)];
+    _delegateFlag.didClickSegementButtonItemFlag = [self.delegate respondsToSelector:@selector(segementView:didClickSegementButtonItem:animated:)];
 }
 
 -(void)setDataSource:(id<HBSegmentDataSource>)dataSource{

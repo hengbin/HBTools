@@ -33,10 +33,22 @@
 
 @property(nonatomic ,strong) UIColor * lineColor;//  当 showLine 为 YES 时可用,默认为 橘色
 
+/** 选择标题是否放大 */
+@property(nonatomic ,assign) BOOL isZoom;// default is NO
+
+/** 增加字号 */
+@property(nonatomic ,assign) CGFloat zoomFactor;// 当 isZoom 为 YES 时可用 默认字号增加3
 
 -(instancetype)initWithOrigin:(CGPoint)origin;
 
 -(void)selectedButtonItemWithContentOffsetX:(CGFloat)offSetX;
+
+/**
+ 设置选择位置索引（默认为第0个）
+
+ @param selectedIndex 初始时选中的位置
+ */
+-(void)setSelectedItemWithIndex:(NSInteger)selectedIndex;
 
 @end
 
@@ -82,6 +94,6 @@
  @param segmentView 回调对象
  @param index 被点击的控件索引
  */
--(void)segementView:(HBSegment *)segmentView didClickSegementButtonItem:(NSInteger)index;
+-(void)segementView:(HBSegment *)segmentView didClickSegementButtonItem:(NSInteger)index animated:(BOOL)animated;
 
 @end

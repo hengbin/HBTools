@@ -49,6 +49,9 @@
     self.segmentView.delegate = self;
     self.segmentView.dataSource = self;
     
+    [self.segmentView setSelectedItemWithIndex:3];
+    
+    
     [self.view addSubview:self.scrollView];
     self.scrollView.sd_layout
     .topSpaceToView(self.segmentView, 0)
@@ -73,34 +76,34 @@
         
         [self.scrollView addSubview:view];
     }
+    
+    [self.scrollView setContentOffset:CGPointMake(3*self.view.width, 0) animated:NO];
 }
 
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     
     [self.segmentView selectedButtonItemWithContentOffsetX:scrollView.contentOffset.x];
 }
 
 -(UIScrollView *)scrollView{
     if (!_scrollView) {
-        _scrollView = [[UIScrollView alloc]init];
-        _scrollView.pagingEnabled = YES;
-        _scrollView.delegate = self;
-        _scrollView.showsVerticalScrollIndicator = NO;
-        _scrollView.showsHorizontalScrollIndicator = NO;
+         _scrollView = [[UIScrollView alloc]init];
+         _scrollView.pagingEnabled = YES;
+         _scrollView.delegate = self;
+         _scrollView.showsVerticalScrollIndicator = NO;
+         _scrollView.showsHorizontalScrollIndicator = NO;
     }
     return _scrollView;
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-
-- (void)segementView:(HBSegment *)segmentView didClickSegementButtonItem:(NSInteger)index {
+-(void)segementView:(HBSegment *)segmentView didClickSegementButtonItem:(NSInteger)index animated:(BOOL)animated{
     
-    [self.scrollView setContentOffset:CGPointMake(index*_screenWidth, 0) animated:YES];
+    [self.scrollView setContentOffset:CGPointMake(index*_screenWidth, 0) animated:animated];
 }
 
 - (NSInteger)numberOfItemInSegmentView:(HBSegment *)segmentView {
