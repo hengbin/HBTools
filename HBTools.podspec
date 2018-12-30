@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.source_files  = "HBTools/HBTools/*.{h,m}"
-  s.public_header_files = 'HBTools/HBTools/HBTools.h'
+  # s.public_header_files = 'HBTools/HBTools/HBTools.h'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
