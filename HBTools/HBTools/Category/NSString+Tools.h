@@ -6,8 +6,26 @@
 //  Copyright © 2018 花生酱. All rights reserved.
 //
 
+/*!
+ *
+ ┌────────────────────────────────────────────────────────────────
+ │
+ │    方法及实现转载于他人
+ │      字符串处理相关 转载于 volientDuan
+ │          GitHub https://github.com/VolientDuan/iOS-ToolClassDemo
+ │          简书：  https://www.jianshu.com/p/eb20c2cc7c36
+ │
+ │      缓存处理及MD5相关 转载于  leeSmile
+ │          GitHub https://github.com/leeSmile/tools
+ │          简书：  https://www.jianshu.com/p/3e476777c00b
+ │
+ └────────────────────────────────────────────────────────────────
+ *
+ */
+
 #import <UIKit/UIKit.h>
 
+#pragma - mark =============== 字符串处理相关 =======================
 
 static NSString  *const XCColorKey = @"color";
 static NSString  *const XCFontKey = @"font";
@@ -190,6 +208,56 @@ typedef enum
  *  @return 富文本
  */
 - (NSMutableAttributedString *)addDownLine;
+
+#pragma - mark =============== 缓存处理相关 =======================
+
+/**
+ *  根据文件名计算出文件大小
+ */
+- (unsigned long long)lx_fileSize;
+/**
+ *  生成缓存目录全路径
+ */
+- (instancetype)cacheDir;
+/**
+ *  生成文档目录全路径
+ */
+- (instancetype)docDir;
+/**
+ *  生成临时目录全路径
+ */
+- (instancetype)tmpDir;
+
+/**
+ *  @brief 根据字数的不同,返回UILabel中的text文字需要占用多少Size
+ *  @param size 约束的尺寸
+ *  @param font 文本字体
+ *  @return 文本的实际尺寸
+ */
+- (CGSize)textSizeWithContentSize:(CGSize)size font:(UIFont *)font;
+
+/**
+ *  @brief  根据文本字数/文本宽度约束/文本字体 求得text的Size
+ *  @param width 宽度约束
+ *  @param font  文本字体
+ *  @return 文本的实际高度
+ */
+- (CGFloat)textHeightWithContentWidth:(CGFloat)width font:(UIFont *)font;
+
+/**
+ *  @brief  根据文本字数/文本宽度约束/文本字体 求得text的Size
+ *  @param height 宽度约束
+ *  @param font  文本字体
+ *  @return 文本的实际长度
+ */
+- (CGFloat)textWidthWithContentHeight:(CGFloat)height font:(UIFont *)font;
+
+#pragma - mark =============== MD5加密相关 =======================
+
+/**
+ *  md5加密
+ */
++ (NSString*)md5HexDigest:(NSString*)input;
 
 
 @end

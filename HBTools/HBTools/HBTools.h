@@ -12,8 +12,8 @@
 /*
  
  HBTools
- 版本：1.1.2
- 发布：2018年12月30日
+ 版本：1.1.3
+ 发布：2018年12月31日
  
  */
 
@@ -27,5 +27,11 @@
 #import "UIControl+ClickRepeatedly.h"
 #import "NSObject+Unicode.h"
 
+#import "HelperUtil.h"
+#import "FileManager.h"
+#import "NSDate+Extension.h"
+
 
 #endif /* HBTools_h */
+
+

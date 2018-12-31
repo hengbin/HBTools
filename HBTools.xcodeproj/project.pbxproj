@@ -21,6 +21,9 @@
 		A6F9450021DA0F5E00BDB5F2 /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F944FF21DA0F5E00BDB5F2 /* NSString+Tools.m */; };
 		A6F9450321DA102000BDB5F2 /* UIControl+ClickRepeatedly.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9450221DA102000BDB5F2 /* UIControl+ClickRepeatedly.m */; };
 		A6F9450621DA10FF00BDB5F2 /* NSObject+Unicode.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9450521DA10FF00BDB5F2 /* NSObject+Unicode.m */; };
+		A6F9450921DA1A4400BDB5F2 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9450821DA1A4400BDB5F2 /* NSDate+Extension.m */; };
+		A6F9450C21DA3F4200BDB5F2 /* HelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9450B21DA3F4200BDB5F2 /* HelperUtil.m */; };
+		A6F9451121DA3FE700BDB5F2 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9451021DA3FE700BDB5F2 /* FileManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,12 @@
 		A6F9450221DA102000BDB5F2 /* UIControl+ClickRepeatedly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ClickRepeatedly.m"; sourceTree = "<group>"; };
 		A6F9450421DA10FF00BDB5F2 /* NSObject+Unicode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Unicode.h"; sourceTree = "<group>"; };
 		A6F9450521DA10FF00BDB5F2 /* NSObject+Unicode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Unicode.m"; sourceTree = "<group>"; };
+		A6F9450721DA1A4400BDB5F2 /* NSDate+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		A6F9450821DA1A4400BDB5F2 /* NSDate+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		A6F9450A21DA3F4200BDB5F2 /* HelperUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelperUtil.h; sourceTree = "<group>"; };
+		A6F9450B21DA3F4200BDB5F2 /* HelperUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelperUtil.m; sourceTree = "<group>"; };
+		A6F9450F21DA3FE700BDB5F2 /* FileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		A6F9451021DA3FE700BDB5F2 /* FileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,20 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				A6F42DE421D39257006A05EA /* HBTools.h */,
-				A6F42DE621D39257006A05EA /* HBSegment.h */,
-				A6F42DE721D39257006A05EA /* HBSegment.m */,
-				A6F944F221D5F76D00BDB5F2 /* UIImage+Tools.h */,
-				A6F944F321D5F78B00BDB5F2 /* UIImage+Tools.m */,
-				A6F944F521D5FEE300BDB5F2 /* UIColor+Hex.h */,
-				A6F944F621D5FEE300BDB5F2 /* UIColor+Hex.m */,
-				A6F944FB21DA0F1200BDB5F2 /* UINavigationBar+BackGroundColor.h */,
-				A6F944FC21DA0F1200BDB5F2 /* UINavigationBar+BackGroundColor.m */,
-				A6F944FE21DA0F5E00BDB5F2 /* NSString+Tools.h */,
-				A6F944FF21DA0F5E00BDB5F2 /* NSString+Tools.m */,
-				A6F9450121DA102000BDB5F2 /* UIControl+ClickRepeatedly.h */,
-				A6F9450221DA102000BDB5F2 /* UIControl+ClickRepeatedly.m */,
-				A6F9450421DA10FF00BDB5F2 /* NSObject+Unicode.h */,
-				A6F9450521DA10FF00BDB5F2 /* NSObject+Unicode.m */,
+				A6F9450E21DA3FA900BDB5F2 /* Category */,
+				A6F9451221DA409C00BDB5F2 /* Module */,
+				A6F9450D21DA3F7300BDB5F2 /* Tools */,
 			);
 			path = HBTools;
 			sourceTree = "<group>";
@@ -145,6 +143,47 @@
 				A6F42DEB21D3947E006A05EA /* SegmentViewController.m */,
 			);
 			path = Segment;
+			sourceTree = "<group>";
+		};
+		A6F9450D21DA3F7300BDB5F2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A6F9450A21DA3F4200BDB5F2 /* HelperUtil.h */,
+				A6F9450B21DA3F4200BDB5F2 /* HelperUtil.m */,
+				A6F9450F21DA3FE700BDB5F2 /* FileManager.h */,
+				A6F9451021DA3FE700BDB5F2 /* FileManager.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A6F9450E21DA3FA900BDB5F2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A6F944F221D5F76D00BDB5F2 /* UIImage+Tools.h */,
+				A6F944F321D5F78B00BDB5F2 /* UIImage+Tools.m */,
+				A6F944F521D5FEE300BDB5F2 /* UIColor+Hex.h */,
+				A6F944F621D5FEE300BDB5F2 /* UIColor+Hex.m */,
+				A6F944FB21DA0F1200BDB5F2 /* UINavigationBar+BackGroundColor.h */,
+				A6F944FC21DA0F1200BDB5F2 /* UINavigationBar+BackGroundColor.m */,
+				A6F944FE21DA0F5E00BDB5F2 /* NSString+Tools.h */,
+				A6F944FF21DA0F5E00BDB5F2 /* NSString+Tools.m */,
+				A6F9450121DA102000BDB5F2 /* UIControl+ClickRepeatedly.h */,
+				A6F9450221DA102000BDB5F2 /* UIControl+ClickRepeatedly.m */,
+				A6F9450421DA10FF00BDB5F2 /* NSObject+Unicode.h */,
+				A6F9450521DA10FF00BDB5F2 /* NSObject+Unicode.m */,
+				A6F9450721DA1A4400BDB5F2 /* NSDate+Extension.h */,
+				A6F9450821DA1A4400BDB5F2 /* NSDate+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A6F9451221DA409C00BDB5F2 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				A6F42DE621D39257006A05EA /* HBSegment.h */,
+				A6F42DE721D39257006A05EA /* HBSegment.m */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 		B61B9F3E8E6BB6FE9F7634A1 /* Pods */ = {
@@ -250,14 +289,17 @@
 			files = (
 				A6F42DBB21D3895B006A05EA /* main.m in Sources */,
 				A6F9450621DA10FF00BDB5F2 /* NSObject+Unicode.m in Sources */,
+				A6F9450921DA1A4400BDB5F2 /* NSDate+Extension.m in Sources */,
 				A6F944F721D5FEE300BDB5F2 /* UIColor+Hex.m in Sources */,
 				A6F944FD21DA0F1200BDB5F2 /* UINavigationBar+BackGroundColor.m in Sources */,
+				A6F9450C21DA3F4200BDB5F2 /* HelperUtil.m in Sources */,
 				A6F42DAD21D3895A006A05EA /* AppDelegate.m in Sources */,
 				A6F9450321DA102000BDB5F2 /* UIControl+ClickRepeatedly.m in Sources */,
 				A6F42DEC21D3947E006A05EA /* SegmentViewController.m in Sources */,
 				A6F944F421D5F78B00BDB5F2 /* UIImage+Tools.m in Sources */,
 				A6F42DE821D39257006A05EA /* HBSegment.m in Sources */,
 				A6F9450021DA0F5E00BDB5F2 /* NSString+Tools.m in Sources */,
+				A6F9451121DA3FE700BDB5F2 /* FileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
