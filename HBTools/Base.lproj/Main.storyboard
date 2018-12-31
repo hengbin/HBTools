@@ -72,6 +72,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="hh2-kd-g11" firstAttribute="centerY" secondItem="6HJ-S2-5xf" secondAttribute="centerY" id="QCJ-lI-Wi4"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hh2-kd-g11" secondAttribute="trailingMargin" id="dYg-g4-mML"/>
                                                 <constraint firstItem="hh2-kd-g11" firstAttribute="leading" secondItem="6HJ-S2-5xf" secondAttribute="leadingMargin" constant="20" id="sfP-I6-5M7"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -98,6 +99,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="K76-2d-hBO" secondAttribute="trailingMargin" id="DZP-LL-kjm"/>
                                                 <constraint firstItem="K76-2d-hBO" firstAttribute="leading" secondItem="8lg-D8-fr4" secondAttribute="leadingMargin" constant="20" id="Qln-Qn-L55"/>
                                                 <constraint firstItem="K76-2d-hBO" firstAttribute="centerY" secondItem="8lg-D8-fr4" secondAttribute="centerY" id="UlT-D7-N9u"/>
                                             </constraints>

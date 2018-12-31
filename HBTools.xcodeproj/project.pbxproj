@@ -15,8 +15,12 @@
 		A6F42DBB21D3895B006A05EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F42DBA21D3895B006A05EA /* main.m */; };
 		A6F42DE821D39257006A05EA /* HBSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F42DE721D39257006A05EA /* HBSegment.m */; };
 		A6F42DEC21D3947E006A05EA /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F42DEB21D3947E006A05EA /* SegmentViewController.m */; };
-		A6F944F421D5F78B00BDB5F2 /* UIImage+ColorToImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F944F321D5F78B00BDB5F2 /* UIImage+ColorToImage.m */; };
+		A6F944F421D5F78B00BDB5F2 /* UIImage+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F944F321D5F78B00BDB5F2 /* UIImage+Tools.m */; };
 		A6F944F721D5FEE300BDB5F2 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F944F621D5FEE300BDB5F2 /* UIColor+Hex.m */; };
+		A6F944FD21DA0F1200BDB5F2 /* UINavigationBar+BackGroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F944FC21DA0F1200BDB5F2 /* UINavigationBar+BackGroundColor.m */; };
+		A6F9450021DA0F5E00BDB5F2 /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F944FF21DA0F5E00BDB5F2 /* NSString+Tools.m */; };
+		A6F9450321DA102000BDB5F2 /* UIControl+ClickRepeatedly.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9450221DA102000BDB5F2 /* UIControl+ClickRepeatedly.m */; };
+		A6F9450621DA10FF00BDB5F2 /* NSObject+Unicode.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9450521DA10FF00BDB5F2 /* NSObject+Unicode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +40,18 @@
 		A6F42DE721D39257006A05EA /* HBSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSegment.m; sourceTree = "<group>"; };
 		A6F42DEA21D3947E006A05EA /* SegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentViewController.h; sourceTree = "<group>"; };
 		A6F42DEB21D3947E006A05EA /* SegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentViewController.m; sourceTree = "<group>"; };
-		A6F944F221D5F76D00BDB5F2 /* UIImage+ColorToImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorToImage.h"; sourceTree = "<group>"; };
-		A6F944F321D5F78B00BDB5F2 /* UIImage+ColorToImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorToImage.m"; sourceTree = "<group>"; };
+		A6F944F221D5F76D00BDB5F2 /* UIImage+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tools.h"; sourceTree = "<group>"; };
+		A6F944F321D5F78B00BDB5F2 /* UIImage+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tools.m"; sourceTree = "<group>"; };
 		A6F944F521D5FEE300BDB5F2 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		A6F944F621D5FEE300BDB5F2 /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		A6F944FB21DA0F1200BDB5F2 /* UINavigationBar+BackGroundColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+BackGroundColor.h"; sourceTree = "<group>"; };
+		A6F944FC21DA0F1200BDB5F2 /* UINavigationBar+BackGroundColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+BackGroundColor.m"; sourceTree = "<group>"; };
+		A6F944FE21DA0F5E00BDB5F2 /* NSString+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Tools.h"; sourceTree = "<group>"; };
+		A6F944FF21DA0F5E00BDB5F2 /* NSString+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tools.m"; sourceTree = "<group>"; };
+		A6F9450121DA102000BDB5F2 /* UIControl+ClickRepeatedly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+ClickRepeatedly.h"; sourceTree = "<group>"; };
+		A6F9450221DA102000BDB5F2 /* UIControl+ClickRepeatedly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ClickRepeatedly.m"; sourceTree = "<group>"; };
+		A6F9450421DA10FF00BDB5F2 /* NSObject+Unicode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Unicode.h"; sourceTree = "<group>"; };
+		A6F9450521DA10FF00BDB5F2 /* NSObject+Unicode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Unicode.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +114,18 @@
 				A6F42DE421D39257006A05EA /* HBTools.h */,
 				A6F42DE621D39257006A05EA /* HBSegment.h */,
 				A6F42DE721D39257006A05EA /* HBSegment.m */,
-				A6F944F221D5F76D00BDB5F2 /* UIImage+ColorToImage.h */,
-				A6F944F321D5F78B00BDB5F2 /* UIImage+ColorToImage.m */,
+				A6F944F221D5F76D00BDB5F2 /* UIImage+Tools.h */,
+				A6F944F321D5F78B00BDB5F2 /* UIImage+Tools.m */,
 				A6F944F521D5FEE300BDB5F2 /* UIColor+Hex.h */,
 				A6F944F621D5FEE300BDB5F2 /* UIColor+Hex.m */,
+				A6F944FB21DA0F1200BDB5F2 /* UINavigationBar+BackGroundColor.h */,
+				A6F944FC21DA0F1200BDB5F2 /* UINavigationBar+BackGroundColor.m */,
+				A6F944FE21DA0F5E00BDB5F2 /* NSString+Tools.h */,
+				A6F944FF21DA0F5E00BDB5F2 /* NSString+Tools.m */,
+				A6F9450121DA102000BDB5F2 /* UIControl+ClickRepeatedly.h */,
+				A6F9450221DA102000BDB5F2 /* UIControl+ClickRepeatedly.m */,
+				A6F9450421DA10FF00BDB5F2 /* NSObject+Unicode.h */,
+				A6F9450521DA10FF00BDB5F2 /* NSObject+Unicode.m */,
 			);
 			path = HBTools;
 			sourceTree = "<group>";
@@ -229,11 +249,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F42DBB21D3895B006A05EA /* main.m in Sources */,
+				A6F9450621DA10FF00BDB5F2 /* NSObject+Unicode.m in Sources */,
 				A6F944F721D5FEE300BDB5F2 /* UIColor+Hex.m in Sources */,
+				A6F944FD21DA0F1200BDB5F2 /* UINavigationBar+BackGroundColor.m in Sources */,
 				A6F42DAD21D3895A006A05EA /* AppDelegate.m in Sources */,
+				A6F9450321DA102000BDB5F2 /* UIControl+ClickRepeatedly.m in Sources */,
 				A6F42DEC21D3947E006A05EA /* SegmentViewController.m in Sources */,
-				A6F944F421D5F78B00BDB5F2 /* UIImage+ColorToImage.m in Sources */,
+				A6F944F421D5F78B00BDB5F2 /* UIImage+Tools.m in Sources */,
 				A6F42DE821D39257006A05EA /* HBSegment.m in Sources */,
+				A6F9450021DA0F5E00BDB5F2 /* NSString+Tools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
