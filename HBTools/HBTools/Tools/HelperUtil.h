@@ -6,6 +6,17 @@
 //  Copyright © 2018 花生酱. All rights reserved.
 //
 
+/*!
+ *
+ ┌────────────────────────────────────────────────────────────────
+ │
+ │    方法及实现转载于 leeSmile
+ │    GitHub https://github.com/leeSmile/tools
+ │    简书：  https://www.jianshu.com/p/3e476777c00b
+ │
+ └────────────────────────────────────────────────────────────────
+ *
+ */
 
 #import <UIKit/UIKit.h>
 
