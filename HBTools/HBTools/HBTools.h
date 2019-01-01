@@ -12,8 +12,8 @@
 /*
  
  HBTools
- 版本：1.1.4
- 发布：2018年12月31日
+ 版本：1.1.5
+ 发布：2019年1月1日
  
  */
 
@@ -30,6 +30,9 @@
 #import "HelperUtil.h"
 #import "FileManager.h"
 #import "NSDate+Extension.h"
+
+#import "UIBarButtonItem+HBBarbuttonItem.h"
+#import "NSTimer+Addition.h"
 
 
 #endif /* HBTools_h */

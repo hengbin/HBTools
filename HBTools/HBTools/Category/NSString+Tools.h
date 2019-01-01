@@ -214,7 +214,7 @@ typedef enum
 /**
  *  根据文件名计算出文件大小
  */
-- (unsigned long long)lx_fileSize;
+- (unsigned long long)fileSize;
 /**
  *  生成缓存目录全路径
  */

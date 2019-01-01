@@ -23,6 +23,13 @@
     return theImage;
 }
 
++ (UIImage *)imageRenderingModeImageNamed:(NSString *)imageName
+{
+    UIImage *image = [UIImage imageNamed:imageName];
+    
+    return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+}
+
 
 +(UIImage *)createImageWithImageNamed:(NSString *)imageNamed fileType:(NSString *)fileType{
     

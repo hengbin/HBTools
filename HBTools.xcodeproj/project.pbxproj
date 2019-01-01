@@ -24,6 +24,8 @@
 		A6F9450921DA1A4400BDB5F2 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9450821DA1A4400BDB5F2 /* NSDate+Extension.m */; };
 		A6F9450C21DA3F4200BDB5F2 /* HelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9450B21DA3F4200BDB5F2 /* HelperUtil.m */; };
 		A6F9451121DA3FE700BDB5F2 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9451021DA3FE700BDB5F2 /* FileManager.m */; };
+		A6F9453721DB2E1C00BDB5F2 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9453621DB2E1C00BDB5F2 /* NSTimer+Addition.m */; };
+		A6F9453A21DB2EB000BDB5F2 /* UIBarButtonItem+HBBarbuttonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9453921DB2EB000BDB5F2 /* UIBarButtonItem+HBBarbuttonItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,10 @@
 		A6F9450B21DA3F4200BDB5F2 /* HelperUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelperUtil.m; sourceTree = "<group>"; };
 		A6F9450F21DA3FE700BDB5F2 /* FileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
 		A6F9451021DA3FE700BDB5F2 /* FileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		A6F9453521DB2E1C00BDB5F2 /* NSTimer+Addition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
+		A6F9453621DB2E1C00BDB5F2 /* NSTimer+Addition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
+		A6F9453821DB2EB000BDB5F2 /* UIBarButtonItem+HBBarbuttonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HBBarbuttonItem.h"; sourceTree = "<group>"; };
+		A6F9453921DB2EB000BDB5F2 /* UIBarButtonItem+HBBarbuttonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HBBarbuttonItem.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,10 @@
 				A6F9450521DA10FF00BDB5F2 /* NSObject+Unicode.m */,
 				A6F9450721DA1A4400BDB5F2 /* NSDate+Extension.h */,
 				A6F9450821DA1A4400BDB5F2 /* NSDate+Extension.m */,
+				A6F9453521DB2E1C00BDB5F2 /* NSTimer+Addition.h */,
+				A6F9453621DB2E1C00BDB5F2 /* NSTimer+Addition.m */,
+				A6F9453821DB2EB000BDB5F2 /* UIBarButtonItem+HBBarbuttonItem.h */,
+				A6F9453921DB2EB000BDB5F2 /* UIBarButtonItem+HBBarbuttonItem.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -293,7 +303,9 @@
 				A6F944F721D5FEE300BDB5F2 /* UIColor+Hex.m in Sources */,
 				A6F944FD21DA0F1200BDB5F2 /* UINavigationBar+BackGroundColor.m in Sources */,
 				A6F9450C21DA3F4200BDB5F2 /* HelperUtil.m in Sources */,
+				A6F9453721DB2E1C00BDB5F2 /* NSTimer+Addition.m in Sources */,
 				A6F42DAD21D3895A006A05EA /* AppDelegate.m in Sources */,
+				A6F9453A21DB2EB000BDB5F2 /* UIBarButtonItem+HBBarbuttonItem.m in Sources */,
 				A6F9450321DA102000BDB5F2 /* UIControl+ClickRepeatedly.m in Sources */,
 				A6F42DEC21D3947E006A05EA /* SegmentViewController.m in Sources */,
 				A6F944F421D5F78B00BDB5F2 /* UIImage+Tools.m in Sources */,

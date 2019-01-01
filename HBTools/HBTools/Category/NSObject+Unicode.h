@@ -28,7 +28,7 @@
  *
  *  @return 字符串
  */
-- (NSString *)my_description;
+- (NSString *)description;
 
 
 @end

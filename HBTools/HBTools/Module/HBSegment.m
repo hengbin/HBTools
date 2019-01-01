@@ -216,7 +216,7 @@ struct DelegateFlag {
     
     BOOL animated = YES;
     
-    if ( labs(buttonIndex - self.currentIndex) >= 3) {
+    if ( labs(buttonIndex - self.currentIndex) > 2) {
         animated = NO;
     }
     self.currentIndex = buttonIndex;

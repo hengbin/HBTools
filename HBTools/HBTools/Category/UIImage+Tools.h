@@ -47,6 +47,14 @@
  */
 +(UIImage *)createImageWithImageNamed:(NSString *)imageNamed fileType:(NSString *)fileType;
 
+/**
+ 取消UIImage的渲染模式
+
+ @param imageName 图片名字
+ @return 图片对象
+ */
++ (UIImage *)imageRenderingModeImageNamed:(NSString *)imageName;
+
 #pragma - mark =============== 尺寸、裁剪相关 =======================
 
 /**

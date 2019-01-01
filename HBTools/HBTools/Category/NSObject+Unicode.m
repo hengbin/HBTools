@@ -10,7 +10,7 @@
 
 @implementation NSObject (Unicode)
 
-- (NSString *)my_description{
+- (NSString *)description{
     NSString *desc = [self description];
     desc = [NSString stringWithCString:[desc cStringUsingEncoding:NSUTF8StringEncoding] encoding:NSNonLossyASCIIStringEncoding];
     return desc;

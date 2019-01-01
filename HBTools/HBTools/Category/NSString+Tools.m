@@ -286,7 +286,7 @@
 }
 
 #pragma - mark =============== 缓存处理相关 =======================
-- (unsigned long long)lx_fileSize
+- (unsigned long long)fileSize
 {
     // 计算self这个文件夹\文件的大小
     
