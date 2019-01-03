@@ -33,7 +33,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     _screenWidth = [UIScreen mainScreen].bounds.size.width;
-    
+        
     _titleArray = @[@"西瓜",@"香蕉",@"西红柿",@"奶油草莓",@"菲律宾原产地芒果",@"马来西亚原产地精品榴莲",@"西瓜",@"香蕉",@"西红柿",@"奶油草莓",@"菲律宾原产地芒果",@"马来西亚原产地精品榴莲"];
     
     
@@ -68,11 +68,7 @@
         
         UIView * view = [[UIView alloc]initWithFrame:CGRectMake(i*_screenWidth, 0, self.scrollView.width, self.scrollView.height)];
         
-        CGFloat redValue = arc4random()%256/255.0;
-        CGFloat blueValue = arc4random()%256/255.0;
-        CGFloat greenValue = arc4random()%256/255.0;
-        
-        view.backgroundColor = [UIColor colorWithRed:redValue green:greenValue blue:blueValue alpha:1];
+        view.backgroundColor = [UIColor randomColor];
         
         [self.scrollView addSubview:view];
     }

@@ -12,8 +12,8 @@
 /*
  
  HBTools
- 版本：1.1.5
- 发布：2019年1月1日
+ 版本：1.1.6
+ 发布：2019年1月3日
  
  */
 
@@ -22,10 +22,8 @@
 #import "UIColor+Hex.h"
 #import "UIImage+Tools.h"
 
-#import "UINavigationBar+BackGroundColor.h"
 #import "NSString+Tools.h"
 #import "UIControl+ClickRepeatedly.h"
-#import "NSObject+Unicode.h"
 
 #import "HelperUtil.h"
 #import "FileManager.h"

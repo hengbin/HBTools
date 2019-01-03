@@ -21,5 +21,7 @@
 // 颜色转换三：iOS中十六进制的颜色（以#开头）转换为UIColor
 + (UIColor *) colorWithHexString: (NSString *)color;
 
+// 随机颜色
++(UIColor *)randomColor;
 
 @end
