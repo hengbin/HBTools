@@ -1,0 +1,5 @@
+
+
+pod spec lint HBTools.podspec --allow-warnings
+
+pod trunk push HBTools.podspec --allow-warnings

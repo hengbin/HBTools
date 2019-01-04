@@ -15,6 +15,10 @@
 		A6F42DBB21D3895B006A05EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F42DBA21D3895B006A05EA /* main.m */; };
 		A6F42DE821D39257006A05EA /* HBSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F42DE721D39257006A05EA /* HBSegment.m */; };
 		A6F42DEC21D3947E006A05EA /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F42DEB21D3947E006A05EA /* SegmentViewController.m */; };
+		A6F8530621DF6D6900AFA291 /* HB_photograph_Select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6F8530221DF6D6900AFA291 /* HB_photograph_Select@3x.png */; };
+		A6F8530721DF6D6900AFA291 /* HB_photograph@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6F8530321DF6D6900AFA291 /* HB_photograph@3x.png */; };
+		A6F8530821DF6D6900AFA291 /* HB_photograph_Select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6F8530421DF6D6900AFA291 /* HB_photograph_Select@2x.png */; };
+		A6F8530921DF6D6900AFA291 /* HB_photograph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6F8530521DF6D6900AFA291 /* HB_photograph@2x.png */; };
 		A6F944F421D5F78B00BDB5F2 /* UIImage+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F944F321D5F78B00BDB5F2 /* UIImage+Tools.m */; };
 		A6F944F721D5FEE300BDB5F2 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F944F621D5FEE300BDB5F2 /* UIColor+Hex.m */; };
 		A6F9450021DA0F5E00BDB5F2 /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F944FF21DA0F5E00BDB5F2 /* NSString+Tools.m */; };
@@ -26,6 +30,7 @@
 		A6F9453A21DB2EB000BDB5F2 /* UIBarButtonItem+HBBarbuttonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9453921DB2EB000BDB5F2 /* UIBarButtonItem+HBBarbuttonItem.m */; };
 		A6F9454521DB85F600BDB5F2 /* HBLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9454421DB85F600BDB5F2 /* HBLabel.m */; };
 		A6F9454821DB90F500BDB5F2 /* LabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9454721DB90F500BDB5F2 /* LabelViewController.m */; };
+		A6F9454E21DE1FFB00BDB5F2 /* HBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9454D21DE1FFB00BDB5F2 /* HBImagePickerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +50,10 @@
 		A6F42DE721D39257006A05EA /* HBSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSegment.m; sourceTree = "<group>"; };
 		A6F42DEA21D3947E006A05EA /* SegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentViewController.h; sourceTree = "<group>"; };
 		A6F42DEB21D3947E006A05EA /* SegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentViewController.m; sourceTree = "<group>"; };
+		A6F8530221DF6D6900AFA291 /* HB_photograph_Select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HB_photograph_Select@3x.png"; sourceTree = "<group>"; };
+		A6F8530321DF6D6900AFA291 /* HB_photograph@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HB_photograph@3x.png"; sourceTree = "<group>"; };
+		A6F8530421DF6D6900AFA291 /* HB_photograph_Select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HB_photograph_Select@2x.png"; sourceTree = "<group>"; };
+		A6F8530521DF6D6900AFA291 /* HB_photograph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HB_photograph@2x.png"; sourceTree = "<group>"; };
 		A6F944F221D5F76D00BDB5F2 /* UIImage+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tools.h"; sourceTree = "<group>"; };
 		A6F944F321D5F78B00BDB5F2 /* UIImage+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tools.m"; sourceTree = "<group>"; };
 		A6F944F521D5FEE300BDB5F2 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -67,6 +76,8 @@
 		A6F9454421DB85F600BDB5F2 /* HBLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBLabel.m; sourceTree = "<group>"; };
 		A6F9454621DB90F500BDB5F2 /* LabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelViewController.h; sourceTree = "<group>"; };
 		A6F9454721DB90F500BDB5F2 /* LabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
+		A6F9454C21DE1FFB00BDB5F2 /* HBImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBImagePickerController.h; sourceTree = "<group>"; };
+		A6F9454D21DE1FFB00BDB5F2 /* HBImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBImagePickerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +141,7 @@
 				A6F9450E21DA3FA900BDB5F2 /* Category */,
 				A6F9451221DA409C00BDB5F2 /* UIModule */,
 				A6F9450D21DA3F7300BDB5F2 /* Tools */,
+				A6F8530121DF6D5000AFA291 /* source */,
 			);
 			path = HBTools;
 			sourceTree = "<group>";
@@ -143,6 +155,17 @@
 				A6F9454721DB90F500BDB5F2 /* LabelViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A6F8530121DF6D5000AFA291 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				A6F8530421DF6D6900AFA291 /* HB_photograph_Select@2x.png */,
+				A6F8530221DF6D6900AFA291 /* HB_photograph_Select@3x.png */,
+				A6F8530521DF6D6900AFA291 /* HB_photograph@2x.png */,
+				A6F8530321DF6D6900AFA291 /* HB_photograph@3x.png */,
+			);
+			path = source;
 			sourceTree = "<group>";
 		};
 		A6F9450D21DA3F7300BDB5F2 /* Tools */ = {
@@ -184,6 +207,8 @@
 				A6F9454421DB85F600BDB5F2 /* HBLabel.m */,
 				A6F42DE621D39257006A05EA /* HBSegment.h */,
 				A6F42DE721D39257006A05EA /* HBSegment.m */,
+				A6F9454C21DE1FFB00BDB5F2 /* HBImagePickerController.h */,
+				A6F9454D21DE1FFB00BDB5F2 /* HBImagePickerController.m */,
 			);
 			path = UIModule;
 			sourceTree = "<group>";
@@ -255,7 +280,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F8530821DF6D6900AFA291 /* HB_photograph_Select@2x.png in Resources */,
 				A6F42DB821D3895B006A05EA /* LaunchScreen.storyboard in Resources */,
+				A6F8530621DF6D6900AFA291 /* HB_photograph_Select@3x.png in Resources */,
+				A6F8530921DF6D6900AFA291 /* HB_photograph@2x.png in Resources */,
+				A6F8530721DF6D6900AFA291 /* HB_photograph@3x.png in Resources */,
 				A6F42DB521D3895B006A05EA /* Assets.xcassets in Resources */,
 				A6F42DB321D3895A006A05EA /* Main.storyboard in Resources */,
 			);
@@ -292,6 +321,7 @@
 				A6F42DBB21D3895B006A05EA /* main.m in Sources */,
 				A6F9450921DA1A4400BDB5F2 /* NSDate+Extension.m in Sources */,
 				A6F944F721D5FEE300BDB5F2 /* UIColor+Hex.m in Sources */,
+				A6F9454E21DE1FFB00BDB5F2 /* HBImagePickerController.m in Sources */,
 				A6F9450C21DA3F4200BDB5F2 /* HelperUtil.m in Sources */,
 				A6F9453721DB2E1C00BDB5F2 /* NSTimer+Addition.m in Sources */,
 				A6F42DAD21D3895A006A05EA /* AppDelegate.m in Sources */,
@@ -444,8 +474,10 @@
 			baseConfigurationReference = 62A9BC8BA3717B75E29E212B /* Pods-HBTools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HBTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +489,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hengbin.HBTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -466,8 +499,10 @@
 			baseConfigurationReference = 9652C9828BD4325470AE8A84 /* Pods-HBTools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HBTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,6 +514,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hengbin.HBTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
