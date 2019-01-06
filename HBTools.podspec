@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
   s.source_files  = "HBTools/HBTools/**/*.{h,m}"
   # s.public_header_files = 'HBTools/HBTools/HBTools.h'
 
-  s.Resources = "HBTools/HBTools/source/*.png"
+  s.Resources = "HBTools/source/*.png"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 

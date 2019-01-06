@@ -122,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				A6F42DE321D39257006A05EA /* HBTools */,
+				A6F8530121DF6D5000AFA291 /* source */,
 				A6F42DE921D39457006A05EA /* ViewControllers */,
 				A6F42DAB21D3895A006A05EA /* AppDelegate.h */,
 				A6F42DAC21D3895A006A05EA /* AppDelegate.m */,
@@ -141,7 +142,6 @@
 				A6F9450E21DA3FA900BDB5F2 /* Category */,
 				A6F9451221DA409C00BDB5F2 /* UIModule */,
 				A6F9450D21DA3F7300BDB5F2 /* Tools */,
-				A6F8530121DF6D5000AFA291 /* source */,
 			);
 			path = HBTools;
 			sourceTree = "<group>";
