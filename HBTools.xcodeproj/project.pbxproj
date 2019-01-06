@@ -30,7 +30,6 @@
 		A6F9453A21DB2EB000BDB5F2 /* UIBarButtonItem+HBBarbuttonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9453921DB2EB000BDB5F2 /* UIBarButtonItem+HBBarbuttonItem.m */; };
 		A6F9454521DB85F600BDB5F2 /* HBLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9454421DB85F600BDB5F2 /* HBLabel.m */; };
 		A6F9454821DB90F500BDB5F2 /* LabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9454721DB90F500BDB5F2 /* LabelViewController.m */; };
-		A6F9454E21DE1FFB00BDB5F2 /* HBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9454D21DE1FFB00BDB5F2 /* HBImagePickerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,8 +75,6 @@
 		A6F9454421DB85F600BDB5F2 /* HBLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBLabel.m; sourceTree = "<group>"; };
 		A6F9454621DB90F500BDB5F2 /* LabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelViewController.h; sourceTree = "<group>"; };
 		A6F9454721DB90F500BDB5F2 /* LabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
-		A6F9454C21DE1FFB00BDB5F2 /* HBImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBImagePickerController.h; sourceTree = "<group>"; };
-		A6F9454D21DE1FFB00BDB5F2 /* HBImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBImagePickerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,8 +204,6 @@
 				A6F9454421DB85F600BDB5F2 /* HBLabel.m */,
 				A6F42DE621D39257006A05EA /* HBSegment.h */,
 				A6F42DE721D39257006A05EA /* HBSegment.m */,
-				A6F9454C21DE1FFB00BDB5F2 /* HBImagePickerController.h */,
-				A6F9454D21DE1FFB00BDB5F2 /* HBImagePickerController.m */,
 			);
 			path = UIModule;
 			sourceTree = "<group>";
@@ -321,7 +316,6 @@
 				A6F42DBB21D3895B006A05EA /* main.m in Sources */,
 				A6F9450921DA1A4400BDB5F2 /* NSDate+Extension.m in Sources */,
 				A6F944F721D5FEE300BDB5F2 /* UIColor+Hex.m in Sources */,
-				A6F9454E21DE1FFB00BDB5F2 /* HBImagePickerController.m in Sources */,
 				A6F9450C21DA3F4200BDB5F2 /* HelperUtil.m in Sources */,
 				A6F9453721DB2E1C00BDB5F2 /* NSTimer+Addition.m in Sources */,
 				A6F42DAD21D3895A006A05EA /* AppDelegate.m in Sources */,
